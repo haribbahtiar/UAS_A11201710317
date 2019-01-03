@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>UAS - A11.2017.10317</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" class="active">HOME</a>
+                <div class="dropdown">
+                    <button class="dropbtn">BANYUMAS 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">SEJARAH</a>
+                        <a href="#">LAMBANG DAERAH</a>
+                        <a href="#">VISI DAN MISI</a>
+                        <a href="#">LETAK GEOGRAFIS</a>
+                        <a href="#">KONTAK</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">PEMERINTAH DAERAH 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">EKSEKUTIF</a>
+                        <a href="#">PERATURAN</a>
+                        <a href="#">LEGISLATIF</a>
+                        <a href="#">ALAMAT INSTANSI</a>
+                        <a href="#">PROFIL BUPATI DAN WAKIL BUPATI</a>
+                        <a href="#">KELEMBAGAAN</a>
+                        <a href="#">TUGAS DAN FUNGSI BADAN PUBLIK</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">MENU PUBLIK 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">BERITA</a>
+                        <a href="#">PENGUMUMAN</a>
+                        <a href="#">BUKUTAMU</a>
+                        <a href="#">GALERI</a>
+                        <a href="#">ARTIKEL</a>
+                        <a href="#">INFORMASI</a>
+                        <a href="#">BANYUMAS DALAM ANGKA</a>
+                        <a href="#">PPID</a>
+                        <a href="#">TRANSPARANSI</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">PENTING BANYUMAS 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">NOMOR PENTING</a>
+                        <a href="#">TRANSPORTASI</a>
+                        <a href="#">JALUR MUDIK</a>
+                        <a href="#">KULINER</a>
+                        <a href="#">LAYANAN KESEHATAN</a>
+                        <a href="#">TEMPAT WISATA</a>
+                        <a href="#">HOTEL</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">UAS UHUY
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="page2.html">PARSING XML DATA OBJEK WISATA BANYUMAS</a>
+                        <a href="page3.html">DOM OBJECT DETAIL OBJEK WISATA</a>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+            <div class="main">
+                <div class="middle">
+                    Data ini didapat pada : <br>
+                    Hari&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <b id="demo"></b><br>
+                    Tanggal&nbsp&nbsp&nbsp: <b id="demo1"></b><br>
+                    Jam&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <b id="demo2"></b><br><br>
+                    <form name="data" id="registration" action="#" method="#" onsubmit="#">
+                        <select id="ph" name="ahli" onchange="infoSelect()">
+                            <option hidden>Pilih Objek Wisata</option>
+                            <option value="Baturraden merupakan tempat menarik di Banyumas yang sangat terkenal. Baturraden ini termasuk objek wisata yang sudah berkembang begitu baik dan pesat.
+Sehingga sampai saat ini Baturraden telah memiliki beberapa cabang wisata yang memiliki keunikan pseona yang berbeda-beda. Jaraknya dari pusat kota hanya 14 km saja, sehingga sangat terjangkau sekali bagi para wisatawan yang ingin berkunjung.
+Salah satu cabangnya adalah Lokawisata Baturraden. Tempat Liburan di Banyumas  ini menawarkan pesona kekayaan Alam yang sangat indah. Jika anda beruntung ketika berkunjung ke tempat ini disaat cuaca cerah. Maka anda akan dapat melihat pantai Cilacap dan Nusa Kambangan dengan begitu jelas dari atas Baturraden.
+Lokawisata Baturraden ini terdapat berbagai fasilitas dan wahana yang lumayan lengkap. Diantaranya terdapat kolam renang, tempat bermain anak di Banyumas bermain, lembah sunyi, pemendangan gunung, sepeda air, hingga teater alam.
+Ditambah lagi udara yang sejuk dan dingin bisa anda rasakan dengan keindahan alam sekitar. Bagi para wisatawan yang datang dari luar kota atau jawa dapat menginap di hotel sekitar objek wisata Baturraden ini.
+Anda juga dapat mejadikan lokasi ini sebagai tempat hiburan malam di Banyumas.">Lokawisata Baturraden</option>
+                            <option value="Curug Ceheng ini terletak di kecamatan Sumbang, yang merupakan ujung timur dari kota Banyumas. Curug ceheng ini memiliki telaga dibawah air yang sukup luas.
+Namun untuk air terjunnya masih lebih besar di Curug Gede. Curug gede ini merupakan objek wisata yang sangat cocok bagi anda dan keluarga untuk berekreasi dan bermain-masin di tempat ini.
+Hal ini dikarenakan tempatnya yang luas dan bisa digunakan untuk bermain bersama.">Curug Ceheng</option>
+                            <option value="Kabupaten Banyumas memang terkenal dengan seribu curug, tak salah jika banyak air terjun yang beitu indah tersebar disana.
+Salah satu air terjun yang terkenal paling indah di Banyumas adalah Curug Cipendok. Curug Cipendok terletak di Cilongok, 25km dari arah barat Kota Banyumas.
+Curug Cipendok memiliki ketinggian sekitar 92 meter. Tempat wisata curug di Banyumas ini dilengkapi dengan hutan lindung dan produksi. Serta menara yang bisa gunakan untuk melihat pemandangan sekitar.">Curug Cipendok</option>
+                            <option value="Masjid Saka tunggal merupakan peninggalan wali sanga. Masjid Saka Tunggal ini terletak di Desa Cikakak, Kecamatan Wangon, Kabupaten Banyumas.
+Disekitar masjid Saka Tunggal ini terdapat makam Kyai Toelih yang merupakan penyear agama Islam di Banyumas. Masjid Saka Tunggal biasanya dijadikan sebagai objek wisata religi di Kabupaten Banyumas.
+Uniknya, di sekitar masjid Saka Tunggal ini juga terdapat kera –kera jinak yang berkeliaran. Sehingga anda bisa bersengkrama dan memberi makan kera-kera tersebut.">Masjid Saka Tunggal</option>
+                            <option value="Jika anda hobi mendaki Gunung. Maka anda harus mencoba menaklukan Gunung Tertinggi di Jawa Tengah ini. Gunung Slamet namanya.
+Gunung dengan ketinggian 3428 Mdpl ini masih aktif dan merupakan spot favorit bagi para pendaki gunung. Selain karena  keindahannya, gunung ini terkenal dengan medan jalan yang penuh tantangan.
+Medan yang akan dilewati cukup berat dan sulit, maka dari itu sangat diperlukan perlengkapan dan fisik yang kuat. Namun, semua itu akan terbayarkan denga pesona keindahan dalam perjalanan maupun ketika sudah sampai puncak Gunung Slamet.
+Apalagi jika anda bisa menikmati keindahan pesona gunung slamet di malam hari. Gunung slamet ini salah satu tempat favorit wisata malam di Banyumas.">Gunung Slamet</option>
+                            <option value="Objek wisata Pancuran Telu (Tiga) masih dalam kawasan Baturraden. Wisata Air Pans ini merupakan pancuran yang mengalir langsung dari dalam Gunung Slamet.
+Tempat piknik di banyumas yaitu wisata pancuran telu ini sangat indah dan nyaman. Sehingga banyak sekali para wisatawan yang berkunjung ke tempat ini.
+Air belerang yang terdapat di objek wisata ini dpercaya dapat bermanfaat terapi pengobatan. Biasanya dibukaan untuk terapi pengobatan sakit tulang dan penyakit kulit seperti kadas atau panu.
+Sumber Air Panas Pancaran Telu ini tidak jauh dari lokasi Wanawisata dan Lokawisata Baturraden yang hanya berjarak 2.5 km saja.">Air Panas Pancuran Telu</option>
+                            <option value="Objek wisata ini sama seperti yang sbeleumnya yakni berasal dari gunung slamet. Perbedaannya terletak pada jumlah pancuran, kalau sebelumnya hanya ada 3 pancuran.
+Sedangkan objek wisata ini memiliki tujuh atau pitu pancuran. Maka dari itu diberi nama Sumber Air Panas Pancuran Pitu. Salah satu fasilitas yang unik adalah terdapat pancuran yang disulurkan khusu ke kamar mandi.
+Sehingga bisa dipesan untuk digunkan secara pribadi. Dikarenakan banyak manfaat ari air belerang, banyak pengunjung yang datang untuk menikmati kesaktian air ini.
+Bahkan, banyak pengunjung yang mengggunkannya untuk terapi pengobatan.">Air Panas Pancuran Pitu</option>
+                            <option value="Telaga sunyi ini letaknya dekat dengan pintu gerbang Wana wisata Baturraden. Untuk menuju kesana, dari gerbang wana wisata kearah timur.
+Dalam perjalanan anda harus berjuang dengan jalan yang cukup menanjak hingga sampai di hutan pinus dan damar. Setelah itu, anda harus berjalan untuk masuk kedalam kawasan wisata telaga sunyi.
+Sesampaianya di telaga sunyi, anda akan disuguhkan dengan keindahan birunya air yang sangat indah. Ditambah lagi curug kecil yang istimewa di tengah-tengah hutan damar yang asri.">Telaga Sunyi</option>
+                            <option value="Objek wisata ini merupakan Museum satu-satunya yang berada di Banyumas. Di dalam museum ini berisi pengetahuan mengenai perbankan di Indonesia.
+Bahkan sampai pada pendiri dan pelopor bank sebagai solusi permasalahan di Indonesia. Untuk masuk ke Museum ini tidak di pungut biaya. Sehingga museum ini termasuk objek wisata murah di Banyumas.
+Museum BRI ini buka setiap hari kecuali jumat dan sabtu. Disekitar museum ini terdapat penjual-penjual makanan khas Banyumas yang bisa anda rasakan.">Museum Bank Rakyat Indonesia</option>
+                        </select><br><br>
+                        <textarea name="info" id="info" cols="100" rows="20"></textarea><br>
+                    </form>
+                </div>
+                <div class="right">
+                    <h3>SEJARAH SINGKAT</h3>
+                    <p>Sejarah singkat Kabupaten Banyumas berdiri pada tahun 1582, tepatnya pada hari Jum`at Kliwon tanggal 6 April 1582 Masehi, atau bertepatan tanggal 12 Robiul Awal 990 Hijriyah. Dari hasil kajian sejarawan, arkeolog dan akademisi sehingga Kemudian ditetapkan dengan Peraturan Daerah (PERDA) Kabupaten Daerah Tingkat II Banyumas Nomor 2 tahun 1990.</p>
+                    <p>Tanggal tersebut masih menjadi perdebatan oleh beberapa ahli sejarah yang menemukan bukti lebih tua yang bersumber dari peninggalan museum kalibening. disebutkan bahwa joko kahiman berangkat ke pajang pada tahun 1571 bulan ramadhan dalam catatan lembaran kayu yang panjangnya hampir 2 meter koleksi museum kalibening. rencananya akan diajukan kembali oleh pemerhati budaya dan stupamas. Diharapkan nantinya akan di kaji ulang oleh pansus yang dibentuk pemda Banyumas beserta anggota DPRD Banyumas.</p>
+                    <h3>TEMPAT WISATA</h3>
+                    <p>
+                        <ul>
+                            <li><a href="https://travelingyuk.com/wisata-baturaden/24313/">Lokawisata Baturraden</a></li>
+                            <li><a href="https://www.aroengbinang.com/2018/03/pancuran-telu-baturraden.html">Pancuran Telu Baturraden Banyumas</a></li>
+                            <li><a href="https://travel.detik.com/dtravelers_stories/u-2779143/legenda-pancuran-pitu-di-baturraden/1">Air Panas Pancuran Pitu</a></li>
+                            <li><a href="http://www.purwokertoguidance.com/wisata/telaga-sunyi-baturraden/">Telaga Sunyi</a></li>
+                            <li><a href="http://bocahporka.blogspot.com/2016/03/jalan-jalan-ke-curug-gede-desa-ketenger.html">Curug Gede</a></li>
+                            <li><a href="https://piknikasik.com/curug-jenggala-kalipagu-surga-yang-tersembunyi-di-banyumas">Curug Jenggala</a></li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="footer">
+                <h3>Footer</h3>
+                <p>2018 – A11.2017.10317</a></p>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var JSONku = '{"hari":"Kamis","tanggal":"3 Januari 2019","jam":"13:52"}';
+            var Objku  = JSON.parse(JSONku);
+            document.getElementById("demo").innerHTML = Objku.hari;
+            document.getElementById("demo1").innerHTML = Objku.tanggal;
+            document.getElementById("demo2").innerHTML = Objku.jam;
+        </script>>
+        <script type="text/javascript" src="js/dom.js"></script>
+    </body>
+</html>
